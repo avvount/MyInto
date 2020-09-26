@@ -1,5 +1,5 @@
 FROM golang:alpine AS builder
-
+RUN echo "HELLO World!!!"
 
 RUN apk update && apk add --no-cache git bash curl
 WORKDIR /go/src/v2ray.com/core
